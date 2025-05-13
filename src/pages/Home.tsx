@@ -1,4 +1,3 @@
-import { main } from "motion/react-client";
 import { Typewriter } from "../components/Typewriter";
 
 export default function Home() {
