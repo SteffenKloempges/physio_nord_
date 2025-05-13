@@ -1,7 +1,7 @@
 export default function Kontakt() {
 
   return (
-    <section className="grid grid-cols-3 place-items-center gap-4 mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:px-8">
+    <section className="grid lg:grid-cols-3 grid-cols-1 place-items-center gap-4 mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:px-8">
             <div className="shadow-xl w-full px-[30px] pt-[30px] pb-[10px] text-gray-900 rounded-lg flex flex-col gap-2 items-center text-center">
                 <img src="/images/telefon.png" alt="icon von einem telefon" className="w-10 h-10"/>
                 <h3>Telefon</h3>
