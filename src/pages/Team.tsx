@@ -1,7 +1,7 @@
 export default function Team() {
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:px-8">
         <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
           Unser Team
         </h1>
@@ -9,7 +9,7 @@ export default function Team() {
           Lernen Sie unser erfahrenes Team kennen
         </p>
         
-        <div className="mx-auto mt-20 grid max-w-7xl grid-cols-1 gap-x-8 gap-y-16 place-items-center">
+        <div className="mx-auto mt-10 grid max-w-7xl grid-cols-1 gap-x-8 gap-y-16 place-items-center">
           {team.map((person) => (
             <div key={person.name} className="flex flex-col items-center justify-center max-w-96">
               <img

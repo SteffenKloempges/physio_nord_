@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
+import { useEffect, useRef } from 'react';
+import type { ReactNode } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -7,6 +9,27 @@ import Team from './pages/Team';
 import Leistungen from './pages/Leistungen';
 import Kontakt from './pages/Kontakt';
 import PageTransition from './components/PageTransition';
+
+interface ScrollToTopProps {
+  children: ReactNode;
+}
+
+function ScrollToTop({ children }: ScrollToTopProps) {
+  const mainRef = useRef<HTMLElement>(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (mainRef.current) {
+      mainRef.current.scrollTop = 0;
+    }
+  }, [location.pathname]);
+
+  return (
+    <main ref={mainRef} className="flex-grow">
+      {children}
+    </main>
+  );
+}
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -28,9 +51,9 @@ function App() {
     <Router>
       <div className="min-h-screen flex flex-col">
         <Navbar />
-        <main className="flex-grow">
+        <ScrollToTop>
           <AnimatedRoutes />
-        </main>
+        </ScrollToTop>
         <Footer />
       </div>
     </Router>
