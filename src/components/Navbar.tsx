@@ -5,6 +5,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Team', href: '/team' },
+  { name: 'Praxis', href: '/praxis' },
   { name: 'Leistungen', href: '/leistungen' },
   { name: 'Kontakt', href: '/kontakt' },
 ];
@@ -15,9 +16,11 @@ export default function Navbar() {
   return (
     <header className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-          <Link to="/">
-            <img src="/images/logo_physio_nord_werl.png" alt="Physio Nord" className="lg:h-20 h-10 w-auto" />
-          </Link>
+        <Link to="/" className='flex items-center gap-4'>
+          <img src="/images/logo_physio_nord_werl.png" alt="Physio Nord" className="lg:h-20 h-10 w-auto" />
+
+          <h1 className='text-xl'>Physio Nord</h1>
+        </Link>
         <div className="flex lg:hidden">
           <button
             type="button"
