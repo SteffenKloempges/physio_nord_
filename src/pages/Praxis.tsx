@@ -1,5 +1,3 @@
-import React from "react";
-
 const images = [
   "DSA02492.jpg",
   "DSA02437.jpg",
