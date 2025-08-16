@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'physio-green': '#4CAF50', // Die grüne Farbe aus dem Logo
+        'physio-green': '#91BF20', // Die grüne Farbe aus dem Logo
       },
     },
   },

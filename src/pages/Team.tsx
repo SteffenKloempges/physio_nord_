@@ -46,7 +46,7 @@ export default function Team() {
                   {displayText}
                   {isLong && (
                     <button
-                      className="ml-2 text-blue-600 hover:underline focus:outline-none"
+                      className="ml-2 text-physio-green hover:underline focus:outline-none"
                       onClick={() => toggleExpand(person.name)}
                     >
                       {isExpanded ? "Weniger anzeigen" : "Mehr anzeigen"}

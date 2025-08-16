@@ -1,7 +1,7 @@
 import { motion, useAnimationControls } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const texts = ["Physio Nord", "Ihrer Gesundheit", "Ihrer Lebensqualität"];
+const texts = ["Physio Nord - by Paul", "Ihrer Gesundheit", "Ihrer Lebensqualität"];
 
 const sentenceVariants = {
   hidden: {
@@ -45,7 +45,7 @@ export const Typewriter = () => {
 
   return (
     <motion.p
-      key={text} // Wichtig für Neurendern bei Textwechsel
+      key={text}
       variants={sentenceVariants}
       initial="hidden"
       animate={controls}

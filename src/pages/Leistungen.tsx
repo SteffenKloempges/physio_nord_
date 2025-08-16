@@ -11,7 +11,7 @@ export default function Leistungen() {
         <p className="mt-6 text-lg leading-8 text-gray-600">
           Entdecken Sie unser umfangreiches Angebot an physiotherapeutischen Behandlungen
         </p>
-        <div className="mt-16 mx-auto w-fit">
+        <div className="mt-16 mx-auto w-full">
           <ImageSlider />
         </div>
         <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -20,14 +20,14 @@ export default function Leistungen() {
               key={leistung.name}
               className="relative flex flex-col gap-6 rounded-2xl bg-gray-50 p-8 shadow-sm ring-1 ring-gray-900/5"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-600 text-white">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-physio-green text-white">
                 <leistung.icon className="h-6 w-6" aria-hidden="true" />
               </div>
               <div>
                 <h3 className="text-xl font-semibold leading-7 text-gray-900">
                   {leistung.name}
                 </h3>
-                <p className="mt-2 text-base leading-7 text-gray-600">
+                <p className="mt-2 text-base leading-7 text-gray-600 whitespace-pre-line">
                   {leistung.description}
                 </p>
               </div>
@@ -40,7 +40,7 @@ export default function Leistungen() {
   );
 }
 
-interface IconProps extends React.SVGProps<SVGSVGElement> {}
+interface IconProps extends React.SVGProps<SVGSVGElement> { }
 
 const leistungen = [
   {
@@ -117,6 +117,23 @@ const leistungen = [
     name: 'Kältetherapie',
     description:
       'Die Kältetherapie wird häufig als unterstützende Maßnahme eingesetzt. Es gibt unterschiedliche Formen: wie zum Beispiel Kühlpacks, Kompressen, Eisbad oder Eisabreibung. Die Wirkung der Kältetherapie ist je nach Temperatur unterschiedlich. Sie wirkt schmerzlindernd, entzündungshemmend und verbessert die Durchblutung.',
+    icon: (props: IconProps) => (
+      <svg fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+        />
+      </svg>
+    ),
+  },
+  {
+    name: 'Reflektorische Atemtherapie',
+    description:
+      `Die reflektorische Atemtherapie (RAT) ist ein spezielles Behandlungskonzept innerhalb der Physiotherapie, das über manuelle Reize an Haut, Muskeln und Faszien reflektorisch auf die Atembewegung und das vegetative Nervensystem einwirkt. Ziel ist es, die Atmung zu verbessern, Spannungszustände zu regulieren und Schmerzen zu lindern.
+      🔍 Grundprinzip: Die reflektorische Atemtherapie nutzt bestimmte Reize (z. B. Druck, Dehnung, Hautverschiebung, Vibration), um Reflexzonen am Körper zu aktivieren. Diese Reize lösen über das zentrale Nervensystem eine automatische Veränderung des Atemmusters aus – ohne dass der Patient willentlich atmen muss. Die reflektorische Atemtherapie ist ein hochwirksames, neurophysiologisch begründetes Verfahren zur Verbesserung der Atmung und Regulation des Körpers über Reflexe. 
+      Sie wird vor allem dann eingesetzt, wenn die Eigenaktivität eingeschränkt ist oder wenn eine fein abgestimmte vegetative Regulation gewünscht ist – also dort, wo andere Therapieformen oft an ihre Grenzen stoßen.
+`,
     icon: (props: IconProps) => (
       <svg fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
         <path

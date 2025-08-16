@@ -28,7 +28,7 @@ Meine weitere Vorliebe ist die Reflektorische Atemtherapie (RAT). Mit dieser spe
     name: "Malte Körfgen",
     role: "Physiotherapeut",
     imageUrl: "/team/malte_koerfgen.jpg",
-    description: `Ich bin Malte und habe nichts zusagen, aber ich bin ziemlich cool.`,
+    description: `Ich bin Malte.`,
   },
   {
     name: "Estera Cupok",
@@ -41,14 +41,18 @@ Ich liebe es, kreativ zu arbeiten, individuell auf Menschen einzugehen und gemei
   },
   {
     name: "Rita Romanowsky",
-    role: "Physiotherapeutin",
+    role: "Rezeption",
     imageUrl: "/team/rita_romanowsky.jpg",
-    description: `Ich bin Rita und habe auch nichts zusagen, aber ich bin auch ziemlich cool.`,
+    description: `Ich heiße Rita Romanowsky, bin 66 Jahre alt und 2024 für Kind und Enkelkinder nach
+NRW gezogen.
+Eigentlich könnte ich zu Hause sitzen, meinen Ruhestand genießen und für meine Enkelkinder da sein.
+Aber ich kann nicht stillsitzen und meine Enkelkinder haben auch ihr Leben. Nach 45 Jahren Arbeit und davon 43 Jahre als Lehrerin für Sport, Französisch und ein wenig Mathematik sollte einfach nicht Schluss sein.
+Seit Mai 2024 arbeite ich in einem tollen Team in dieser Praxis mit vielen sehr netten Patienten und habe trotzdem ausreichend Freizeit für meinen Ruhestand.`,
   },
-  {
-    name: "Inga Grund",
-    role: "Physiotherapeutin",
-    imageUrl: "/team/inga_grund.jpg",
-    description: `Ich hoffe ich bin Inga & ich bin ziemlich cool.`,
-  },
+  // {
+  //   name: "Marleen Grund",
+  //   role: "Physiotherapeutin",
+  //   imageUrl: "/team/inga_grund.jpg",
+  //   description: `Ich hoffe ich bin Inga & ich bin ziemlich cool.`,
+  // },
 ];

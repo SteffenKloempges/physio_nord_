@@ -15,6 +15,8 @@ import Leistungen from "./pages/Leistungen";
 import Kontakt from "./pages/Kontakt";
 import PageTransition from "./components/PageTransition";
 import Praxis from "./pages/Praxis";
+import Impressum from "./pages/Impressum";
+import Datenschutz from "./pages/Datenschutz";
 
 interface ScrollToTopProps {
   children: ReactNode;
@@ -80,6 +82,22 @@ function AnimatedRoutes() {
           element={
             <PageTransition>
               <Kontakt />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/impressum"
+          element={
+            <PageTransition>
+              <Impressum />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/datenschutz"
+          element={
+            <PageTransition>
+              <Datenschutz />
             </PageTransition>
           }
         />
