@@ -13,20 +13,20 @@ export const ImageSlider = () => {
         delay: 3000,
         disableOnInteraction: false,
       }}
-      className="max-w-xl"
+      className="w-full"
     >
       <SwiperSlide>
         <img
           src="/images/praxis/DSA02377.jpg"
           alt="Image 1"
-          className="w-full h-full object-cover rounded-2xl overflow-hidden"
+          className="w-full h-[75vh] object-cover rounded-2xl overflow-hidden"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
           src="/images/praxis/DSA02836.jpg"
           alt="Image 2"
-          className="w-full h-full object-cover rounded-2xl overflow-hidden"
+          className="w-full h-[75vh] object-cover rounded-2xl overflow-hidden"
         />
       </SwiperSlide>
     </Swiper>

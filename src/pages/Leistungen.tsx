@@ -133,15 +133,33 @@ const leistungen = [
       `Die reflektorische Atemtherapie (RAT) ist ein spezielles Behandlungskonzept innerhalb der Physiotherapie, das über manuelle Reize an Haut, Muskeln und Faszien reflektorisch auf die Atembewegung und das vegetative Nervensystem einwirkt. Ziel ist es, die Atmung zu verbessern, Spannungszustände zu regulieren und Schmerzen zu lindern.
       🔍 Grundprinzip: Die reflektorische Atemtherapie nutzt bestimmte Reize (z. B. Druck, Dehnung, Hautverschiebung, Vibration), um Reflexzonen am Körper zu aktivieren. Diese Reize lösen über das zentrale Nervensystem eine automatische Veränderung des Atemmusters aus – ohne dass der Patient willentlich atmen muss. Die reflektorische Atemtherapie ist ein hochwirksames, neurophysiologisch begründetes Verfahren zur Verbesserung der Atmung und Regulation des Körpers über Reflexe. 
       Sie wird vor allem dann eingesetzt, wenn die Eigenaktivität eingeschränkt ist oder wenn eine fein abgestimmte vegetative Regulation gewünscht ist – also dort, wo andere Therapieformen oft an ihre Grenzen stoßen.
-`,
+  `,
     icon: (props: IconProps) => (
       <svg fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+          d="M4.5 12a7.5 7.5 0 0015 0m-15 0a7.5 7.5 0 1115 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077l1.41-.513m14.095-5.13l1.41-.513M5.106 17.785l1.15-.964m11.49-9.642l1.149-.964M7.501 19.795l.75-1.3m7.5-12.99l.75-1.3m-6.063 16.658l.26-1.477m2.605-14.772l.26-1.477m0 17.726l-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205L12 12m6.894 5.785l-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864l-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495"
         />
       </svg>
     ),
   },
-]; 
+  {
+    name: 'KG-ZNS',
+    description:
+      `KG-ZNS ist die Abkürzung für Krankengymnastik am zentralen Nervensystem. Dabei handelt es sich um eine spezielle Form der Physiotherapie, die gezielt auf Störungen des zentralen Nervensystems ausgerichtet ist. Solche Störungen können im Rahmen verschiedener Erkrankungen auftreten, beispielsweise nach einem Schlaganfall (Apoplex), bei Multiple Sklerose (MS), Morbus Parkinson, Schädel-Hirn-Trauma, Querschnittlähmung oder auch bei einer infantilen Zerebralparese.
+Das Ziel der KG-ZNS besteht darin, Bewegungsfunktionen zu fördern und nach Möglichkeit wiederherzustellen. Dabei werden pathologische Bewegungsmuster, wie etwa eine Spastik, gehemmt und gleichzeitig physiologische Bewegungsabläufe angebahnt und geschult. Darüber hinaus steht die Verbesserung von Koordination, Gleichgewicht und Körperwahrnehmung im Vordergrund. Ein weiteres wesentliches Ziel ist die Steigerung der Selbstständigkeit im Alltag, um den Betroffenen ein möglichst eigenständiges Leben zu ermöglichen.
+Die Durchführung der KG-ZNS erfolgt in der Regel nach anerkannten therapeutischen Konzepten. Hierzu zählen unter anderem das Bobath-Konzept, die Propriozeptive Neuromuskuläre Fazilitation (PNF) sowie die Vojta-Therapie, die vor allem bei Kindern Anwendung findet. In unserer Arbeit orientieren wir uns schwerpunktmäßig am PNF-Konzept.
+
+  `,
+    icon: (props: IconProps) => (
+      <svg fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+        />
+      </svg>
+    ),
+  },
+];
