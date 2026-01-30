@@ -5,7 +5,7 @@ Bei diesem Projekt ging es um ein Rebranding der bestehenden Webseite. Der Kunde
 
 ## Genutze Technologien
 
-**Frontend:** HTML, TailwindCSS, ReactJS, Vite
+**Frontend:** HTML, TailwindCSS, TypeScript, ReactJS, Vite, CursorAI
 
 
 ## 🔗 Link zum Projekt
