@@ -17,18 +17,12 @@ export const teamData = [
     name: "Niki Stöcker",
     role: "Physiotherapeutin",
     imageUrl: "/team/niki_stoecker.jpg",
-    description: `Ich bin Niki Stöcker und 
+    description: `Ich bin Niki Stöcker und
 seit 2002 bin ich mit großer Leidenschaft als Physiotherapeutin tätig. Ich bin spontan, dynamisch, bewegungsfreudig und ein eher lebensfreudiger Mensch – Eigenschaften, die ich täglich in meine Arbeit mit und am Menschen einbringe. Es freut mich, wenn mir Patientinnen und Patienten ihr Vertrauen schenken und ich sie in gesundheitlich herausfordernden Zeiten begleiten darf – idealerweise bis zur vollständigen Genesung.
 
 Getreu dem Motto „Wer rastet, der rostet!“ liegt mir die aktive Bewegung besonders am Herzen. Meine Intention ist es, Menschen wieder in Bewegung zu bringen und sie dabei zu unterstützen, ihre Lebensqualität zurückzugewinnen.
 
 Meine weitere Vorliebe ist die Reflektorische Atemtherapie (RAT). Mit dieser spezialisierten Methode der Atemtherapie kann ich Patientinnen und Patienten  jeden Alters mit Atemwegserkrankungen gezielt und effektiv unterstützen.`,
-  },
-  {
-    name: "Malte Körfgen",
-    role: "Physiotherapeut",
-    imageUrl: "/team/malte_koerfgen.jpg",
-    description: `Ich bin Malte.`,
   },
   {
     name: "Estera Cupok",
@@ -49,10 +43,4 @@ Eigentlich könnte ich zu Hause sitzen, meinen Ruhestand genießen und für mein
 Aber ich kann nicht stillsitzen und meine Enkelkinder haben auch ihr Leben. Nach 45 Jahren Arbeit und davon 43 Jahre als Lehrerin für Sport, Französisch und ein wenig Mathematik sollte einfach nicht Schluss sein.
 Seit Mai 2024 arbeite ich in einem tollen Team in dieser Praxis mit vielen sehr netten Patienten und habe trotzdem ausreichend Freizeit für meinen Ruhestand.`,
   },
-  // {
-  //   name: "Marleen Grund",
-  //   role: "Physiotherapeutin",
-  //   imageUrl: "/team/inga_grund.jpg",
-  //   description: `Ich hoffe ich bin Inga & ich bin ziemlich cool.`,
-  // },
 ];
