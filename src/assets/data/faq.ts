@@ -46,9 +46,5 @@ export const faq: Faq[] = [
   des „Sektoralen Heilpraktikers“, ist es möglich auch ohne ärztliche Verordnung
   Physiotherapeutische Leistungen in Anspruch zu nehmen. Geregelt ist das nach §1 Absatz 1 HeilprG
   und bei uns voraussichtlich ab März 2024 möglich.`
-  },
-  {
-    question: 'Preislist für Selbst-, Privat- und Beihilfezahler',
-    answer: `Hier können Sie unsere Preisliste runterladen .`
   }
 ]

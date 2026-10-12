@@ -24,7 +24,7 @@ export const ImageSlider = () => {
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src="/images/praxis/DSA02836.jpg"
+          src="/images/praxis/DSE07229.jpg"
           alt="Image 2"
           className="w-full h-[75vh] object-cover rounded-2xl overflow-hidden"
         />

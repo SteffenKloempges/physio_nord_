@@ -9,14 +9,13 @@ export default function Impressum() {
                 Physio Nord - by Paul<br />
                 Praxis für Physiotherapie<br />
                 Industriestrasse 9<br />
-                Gebäude 44<br />
                 59457 Werl
             </p>
 
             <h2 className="text-xl font-semibold mt-6 mb-2">Kontakt</h2>
             <p className="text-gray-700 leading-relaxed">
-                Telefon: +49 (0) 2922 - 88 09 021<br />
-                E-Mail: <a href="mailto:paul.muenzer@web.de" className="text-blue-600 hover:underline">paul.muenzer@web.de</a>
+                Telefon: 02922 - 88 09 021<br />
+                E-Mail: <a href="mailto:info@physio-nord-werl.de" className="text-blue-600 hover:underline">info@physio-nord-werl.de</a>
             </p>
 
             <h2 className="text-xl font-semibold mt-6 mb-2">Aufsichtsbehörde</h2>
