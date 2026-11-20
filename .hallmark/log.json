@@ -1,0 +1,42 @@
+[
+ {
+  "mode": "redesign",
+  "depth": "full",
+  "scope": "site",
+  "shape": "Catalogue",
+  "theme": "coral",
+  "axes": "light/grotesk-sans/warm",
+  "hero": "Counter",
+  "nav": "masthead",
+  "footer": "colophon block",
+  "imagery": "photographs",
+  "photos": [
+   "DSE08861",
+   "DSA02377",
+   "DSE08932",
+   "DSE08890",
+   "DSE07229",
+   "DSA02728"
+  ],
+  "entry": "none",
+  "fingerprint": "057164",
+  "sections": [
+   "Counter",
+   "Showcase",
+   "Split+Rows",
+   "Index",
+   "Rail",
+   "Split"
+  ],
+  "signature": "Terminkarte on cotton stock with the stamp pressed in green",
+  "waived": [
+   "37",
+   "83",
+   "39b",
+   "44c",
+   "79"
+  ],
+  "prompt": "Physiotherapie-Praxis in Werl",
+  "date": "2026-11-20"
+ }
+]

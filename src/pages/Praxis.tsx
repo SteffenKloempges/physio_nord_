@@ -1,53 +1,64 @@
+import type { CSSProperties } from "react";
+
+const lead = [
+  { file: "DSE07229.jpg", alt: "Übung mit Hanteln unter Anleitung einer Therapeutin" },
+  { file: "DSA02728.jpg", alt: "Empfangsbereich mit Stuhl und gerahmtem Bild" },
+];
+
 const images = [
-  "DSA02492.jpg",
-  "DSA02437.jpg",
-  "DSA02641.jpg",
-  "DSA02791.jpg",
-  "DSE08959.jpg",
-  "DSE08932.jpg",
-  "DSE08921.jpg",
-  "DSE08890.jpg",
-  "DSE08861.jpg",
-  "DSE08880.jpg",
-  "DSE08825.jpg",
-  "DSE08785.jpg",
-  "DSE08672.jpg",
-  "DSE08701.jpg",
-  "DSA02192.jpg",
-  "DSA02377.jpg",
-  "DSE07229.jpg",
-  "DSE07238.jpg",
-  "DSE07241.jpg",
-  "DSA06641.jpg",
-  "DSA02807.jpg",
-  "DSA02796.jpg",
-  "DSA02723.jpg",
-  "DSA02728.jpg",
+  { file: "DSA02492.jpg", alt: "Paul Münzer behandelt das Bein eines Patienten auf der Liege" },
+  { file: "DSA02437.jpg", alt: "Mobilisation der Hand eines Patienten" },
+  { file: "DSA02641.jpg", alt: "Eine Therapeutin behandelt den Rücken einer Patientin" },
+  { file: "DSA02791.jpg", alt: "Tasse mit der Aufschrift „Physio mit Herz“" },
+  { file: "DSE08959.jpg", alt: "Eine Mitarbeiterin schreibt am Empfang" },
+  { file: "DSE08932.jpg", alt: "Eingang der Praxis mit Treppe" },
+  { file: "DSE08921.jpg", alt: "Holzschild mit dem Logo von Physio Nord" },
+  { file: "DSE08890.jpg", alt: "Wartebereich mit Stühlen" },
+  { file: "DSE08861.jpg", alt: "Behandlungsraum mit Liege und Sprossenwand" },
+  { file: "DSE08880.jpg", alt: "Massagelotionen auf einer Behandlungsliege" },
+  { file: "DSE08825.jpg", alt: "Eine Fangopackung in Nahaufnahme" },
+  { file: "DSE08785.jpg", alt: "Schlingentrainer an der Sprossenwand" },
+  { file: "DSE08672.jpg", alt: "Flur der Praxis" },
+  { file: "DSE08701.jpg", alt: "Behandlungsraum mit Liege und Fenster" },
+  { file: "DSA02192.jpg", alt: "Zwei Mitarbeiterinnen am Empfang" },
+  { file: "DSA02377.jpg", alt: "Eine Therapeutin behandelt den Fuß einer Patientin" },
+  { file: "DSE07238.jpg", alt: "Eine Therapeutin dehnt das Bein eines Patienten" },
+  { file: "DSE07241.jpg", alt: "Eine Therapeutin bei der Dehnung, lächelnd" },
+  { file: "DSA06641.jpg", alt: "Heller Behandlungsraum mit Liege und Pflanzen" },
+  { file: "DSA02807.jpg", alt: "Behandlungsliege am Fenster" },
+  { file: "DSA02796.jpg", alt: "Faszienball, Holzroller und Tennisball" },
+  { file: "DSA02723.jpg", alt: "Pflanze und Sparschwein am Empfang" },
 ];
 
 export default function Praxis() {
   return (
-    <div className="bg-white min-h-screen py-12">
-      <h1 className="text-4xl font-bold text-center mb-10 text-gray-900">
-        Einblicke in unsere Praxis
-      </h1>
-      <div className="mx-auto max-w-6xl px-4">
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
-          {images.map((img) => (
-            <div
-              key={img}
-              className="break-inside-avoid overflow-hidden rounded-xl shadow transition-transform duration-300 hover:scale-105"
-            >
+    <>
+      <header className="container page-head">
+        <h1>Einblicke in unsere Praxis</h1>
+        <p className="lead">Industriestraße 9, 59457 Werl.</p>
+      </header>
+      <div className="container">
+        <div className="gallery-lead">
+          {lead.map((img, i) => (
+            <figure className="photo" key={img.file}>
               <img
-                src={`/images/praxis/${img}`}
-                alt="Praxis Impression"
-                className="w-full h-auto object-cover rounded-xl"
-                loading="lazy"
+                src={`/images/praxis/${img.file}`}
+                alt={img.alt}
+                width={i === 0 ? 1620 : 720}
+                height="1080"
+                fetchPriority={i === 0 ? "high" : "auto"}
               />
-            </div>
+            </figure>
+          ))}
+        </div>
+        <div className="gallery">
+          {images.map((img, i) => (
+            <figure className="photo" key={img.file} data-reveal style={{ "--i": i % 3 } as CSSProperties}>
+              <img src={`/images/praxis/${img.file}`} alt={img.alt} loading="lazy" />
+            </figure>
           ))}
         </div>
       </div>
-    </div>
+    </>
   );
 }

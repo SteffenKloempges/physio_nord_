@@ -1,4 +1,5 @@
 import { useState } from "react";
+import type { CSSProperties } from "react";
 import { teamData } from "../assets/data/team";
 
 export default function Team() {
@@ -9,55 +10,53 @@ export default function Team() {
   };
 
   return (
-    <div className="bg-white">
-      <div className="mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:px-8">
-        <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-          Unser Team
-        </h1>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
-          Lernen Sie unser erfahrenes Team kennen
-        </p>
+    <>
+      <header className="container page-head">
+        <h1>Unser Team</h1>
+        <p className="lead">Lernen Sie unser erfahrenes Team kennen.</p>
+      </header>
 
-        <div className="mx-auto mt-10 grid max-w-7xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
-          {teamData.map((person) => {
+      <div className="container">
+        <ul className="team">
+          {teamData.map((person, i) => {
             const isLong = person.description.length > 200;
             const isExpanded = expanded[person.name];
             const displayText =
               isExpanded || !isLong
                 ? person.description
-                : person.description.slice(0, 200) + "...";
+                : person.description.slice(0, 200).trimEnd() + "…";
             return (
-              <div
-                key={person.name}
-                className="flex flex-col items-center max-w-96 h-full bg-white rounded-2xl shadow p-6"
-              >
-                <img
-                  className="aspect-[3/4] w-full rounded-2xl object-cover"
-                  src={person.imageUrl}
-                  alt={person.name}
-                />
-                <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">
-                  {person.name}
-                </h3>
-                <p className="text-base leading-7 text-gray-600">
-                  {person.role}
-                </p>
-                <p className="mt-4 text-base leading-7 text-gray-600 text-center">
-                  {displayText}
-                  {isLong && (
-                    <button
-                      className="ml-2 text-physio-green hover:underline focus:outline-none"
-                      onClick={() => toggleExpand(person.name)}
-                    >
-                      {isExpanded ? "Weniger anzeigen" : "Mehr anzeigen"}
-                    </button>
-                  )}
-                </p>
-              </div>
+              <li key={person.name} data-reveal style={{ "--i": i % 4 } as CSSProperties}>
+                <figure className="person">
+                  <img
+                    src={person.imageUrl}
+                    alt={person.name}
+                    width="720"
+                    height="1080"
+                    loading={i < 4 ? "eager" : "lazy"}
+                  />
+                  <figcaption>
+                    <h2 className="title-size">{person.name}</h2>
+                    <p>{person.role}</p>
+                  </figcaption>
+                </figure>
+                <p className="person__bio" id={`bio-${i}`}>{displayText}</p>
+                {isLong && (
+                  <button
+                    type="button"
+                    className="toggle"
+                    aria-expanded={!!isExpanded}
+                    aria-controls={`bio-${i}`}
+                    onClick={() => toggleExpand(person.name)}
+                  >
+                    {isExpanded ? "Weniger anzeigen" : "Mehr anzeigen"}
+                  </button>
+                )}
+              </li>
             );
           })}
-        </div>
+        </ul>
       </div>
-    </div>
+    </>
   );
 }

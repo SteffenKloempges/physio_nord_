@@ -17,6 +17,7 @@ import PageTransition from "./components/PageTransition";
 import Praxis from "./pages/Praxis";
 import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
+import { useReveal } from "./components/useReveal";
 
 interface ScrollToTopProps {
   children: ReactNode;
@@ -33,7 +34,7 @@ function ScrollToTop({ children }: ScrollToTopProps) {
   }, [location.pathname]);
 
   return (
-    <main ref={mainRef} className="flex-grow">
+    <main ref={mainRef} id="main" tabIndex={-1}>
       {children}
     </main>
   );
@@ -107,9 +108,10 @@ function AnimatedRoutes() {
 }
 
 function App() {
+  useReveal();
   return (
     <Router>
-      <div className="min-h-screen flex flex-col">
+      <div className="app">
         <Navbar />
         <ScrollToTop>
           <AnimatedRoutes />

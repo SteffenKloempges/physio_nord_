@@ -1,10 +1,12 @@
+import "./legal.css";
+
 export default function Impressum() {
     return (
-        <section className="max-w-3xl mx-auto p-6 bg-white rounded-2xl shadow-sm">
-            <h1 className="text-3xl font-bold mb-6">Impressum</h1>
+        <section className="container"><div className="legal">
+            <h1>Impressum</h1>
 
-            <h2 className="text-xl font-semibold mt-6 mb-2">Angaben gemäß § 5 TMG</h2>
-            <p className="text-gray-700 leading-relaxed">
+            <h2>Angaben gemäß § 5 TMG</h2>
+            <p>
                 Paul Münzer<br />
                 Physio Nord - by Paul<br />
                 Praxis für Physiotherapie<br />
@@ -12,48 +14,48 @@ export default function Impressum() {
                 59457 Werl
             </p>
 
-            <h2 className="text-xl font-semibold mt-6 mb-2">Kontakt</h2>
-            <p className="text-gray-700 leading-relaxed">
+            <h2>Kontakt</h2>
+            <p>
                 Telefon: 02922 - 88 09 021<br />
-                E-Mail: <a href="mailto:info@physio-nord-werl.de" className="text-blue-600 hover:underline">info@physio-nord-werl.de</a>
+                E-Mail: <a href="mailto:info@physio-nord-werl.de">info@physio-nord-werl.de</a>
             </p>
 
-            <h2 className="text-xl font-semibold mt-6 mb-2">Aufsichtsbehörde</h2>
-            <p className="text-gray-700 leading-relaxed">
+            <h2>Aufsichtsbehörde</h2>
+            <p>
                 Kreis Soest - Gesundheit, Verbraucherschutz und Gefahrenabwehr<br />
                 Hoher Weg 1-3<br />
                 59494 Soest<br />
                 Nordrhein-Westfalen
             </p>
             <p>
-                <a href="https://www.kreis-soest.de" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                <a href="https://www.kreis-soest.de" target="_blank" rel="noopener noreferrer">
                     https://www.kreis-soest.de
                 </a>
             </p>
 
-            <h2 className="text-xl font-semibold mt-6 mb-2">Berufsbezeichnung und berufsrechtliche Regelungen</h2>
-            <p className="text-gray-700 leading-relaxed">
+            <h2>Berufs&shy;bezeichnung und berufsrechtliche Regelungen</h2>
+            <p>
                 Berufsbezeichnung:<br />
                 staatlich geprüfter und anerkannter Physiotherapeut
             </p>
 
-            <h2 className="text-xl font-semibold mt-6 mb-2">Angaben zur Berufshaftpflichtversicherung</h2>
-            <p className="text-gray-700 leading-relaxed">
+            <h2>Angaben zur Berufs&shy;haftpflicht&shy;versicherung</h2>
+            <p>
                 <strong>Name und Sitz des Versicherers:</strong><br />
                 Continentale Sachversicherung AG<br />
                 Ruhrallee 92<br />
                 44139 Dortmund
             </p>
-            <p className="text-gray-700 leading-relaxed">
+            <p>
                 <strong>Geltungsraum der Versicherung:</strong><br />
                 Deutschland
             </p>
 
-            <h2 className="text-xl font-semibold mt-6 mb-2">Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
-            <p className="text-gray-700 leading-relaxed">
+            <h2>Verbraucher&shy;streit&shy;beilegung / Universalschlichtungsstelle</h2>
+            <p>
                 Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
             </p>
-        </section>
+        </div></section>
 
     )
 }
