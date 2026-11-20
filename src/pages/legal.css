@@ -1,0 +1,12 @@
+/* Hallmark · legal pages of the Physio Nord redesign · shares tokens.css and base.css through src/index.css; Impressum and Datenschutz text unchanged */
+.legal { max-width: 46rem; padding-block: var(--space-3xl) 0; line-height: 1.7; }
+.legal h1 { font-size: var(--text-display-s); margin-bottom: var(--space-xl); }
+.legal h2 { font-size: var(--text-2xl); margin: var(--space-2xl) 0 var(--space-md); }
+.legal h3 { font-size: var(--text-lg); margin: var(--space-xl) 0 var(--space-sm); }
+.legal h4 { margin: var(--space-lg) 0 var(--space-xs); font-size: var(--text-md); font-weight: 600; }
+.legal p { margin: 0 0 var(--space-md); color: var(--color-ink-2); }
+.legal a { color: var(--color-ink); text-decoration-color: var(--color-accent-2); overflow-wrap: anywhere; }
+.legal a:hover { text-decoration-thickness: 2px; }
+.legal ul { padding-left: 1.2em; color: var(--color-ink-2); }
+.legal h1, .legal h2, .legal h3, .legal h4 { overflow-wrap: break-word; hyphens: auto; min-width: 0; text-wrap: balance; }
+

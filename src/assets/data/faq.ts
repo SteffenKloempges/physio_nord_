@@ -35,16 +35,5 @@ export const faq: Faq[] = [
   ermöglich es uns, Patienten von der Warteliste, oder mit akuten Beschwerdebildern zu versorgen.
   Kurzfristig abgesagte, oder nicht wahrgenommene Termine werden mit einer Ausfallrechnung in Höhe
   von 50€ in Rechnung gestellt.`
-  },
-  {
-    question: 'Was ist als Selbstzahler zu beachten',
-    answer: `Therapeutische Leistungen ohne ärztliche Verordnung dürfen in der Regel nicht erbracht werden.
-  Reine Selbstzahlerleistungen umfassen Wellness-Massagen, oder Zusatzleistungen wie Fango,
-  Tapping, Heißluft, usw.
-  
-  Es gibt aber eine Ausnahme: besitzt der behandelnde Physiotherapeut:in die Zusatzqualifikation
-  des „Sektoralen Heilpraktikers“, ist es möglich auch ohne ärztliche Verordnung
-  Physiotherapeutische Leistungen in Anspruch zu nehmen. Geregelt ist das nach §1 Absatz 1 HeilprG
-  und bei uns voraussichtlich ab März 2024 möglich.`
   }
 ]

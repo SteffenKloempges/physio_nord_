@@ -1,6 +1,8 @@
+import "./legal.css";
+
 export default function Datenschutz() {
     return (
-        <section className="max-w-4xl mx-auto p-6 bg-white rounded-2xl shadow-sm">
+        <section className="container"><div className="legal">
             <h1>Datenschutz&shy;erkl&auml;rung</h1>
             <h2>1. Datenschutz auf einen Blick</h2>
             <h3>Allgemeine Hinweise</h3>
@@ -215,6 +217,6 @@ export default function Datenschutz() {
                 href="https://icons8.com">Icons8</a>
             <a target="_blank" href="https://icons8.com/icon/86840/mail">Mail</a> icon by <a target="_blank"
                 href="https://icons8.com">Icons8</a>
-        </section>
+        </div></section>
     )
 }
